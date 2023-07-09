@@ -1,0 +1,246 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Slab&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gradient-blue: linear-gradient(180deg, #5A96E3 0%, #247BC9 67.19%, #237BC9 67.20%, #227AC8 67.21%, #0A6EBD 100%);
+  --dark1: #1B1D21;
+  --muted: #494A4D;
+  --offwhite: #E8E8E9;
+  --nutral-color: #F6F6F6;
+  --primary-blue: #005DE0;
+
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+/* common styles start*/
+.headingOne {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 86px;
+  margin-bottom: 30px;
+}
+
+.headingTwo {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+
+}
+
+.headingThree {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.headingFour {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.headingFive {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.text_sm {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.text_md {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.text_dark {
+  color: var(--dark1);
+}
+
+.text_muted {
+  color: var(--muted);
+}
+
+.text_primary {
+  color: var(--primary-blue);
+}
+
+.text_light {
+  color: #FFFFFF;
+}
+
+.text_upper {
+  text-transform: uppercase;
+}
+
+.text_capital {
+  text-transform: capitalize;
+}
+
+.button {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 42px;
+  border-radius: 30px;
+}
+
+.container {
+  padding-left: 370px;
+  padding-right: 370px;
+}
+
+.title-bar {
+  width: 60px;
+  height: 4px;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, #005DE0 0%, #00B0FC 100%);
+  display: inline-block;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+/* common styles end */
+
+.header_section {
+  background: var(--gradient-blue);
+  box-shadow: 0px 10px 70px 0px rgba(0, 0, 0, 0.10);
+  padding: 30px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navigation {}
+
+.navigation > ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: var(--offwhite);
+}
+
+.quote_button {
+  color: var(--dark1);
+  background-color: #ffffff;
+}
+
+/* banner start */
+.banner_section {
+  position: relative;
+  height: 950px;
+  background: linear-gradient(105deg, #F6F6F6 35%, transparent 65%), url(../images/young-managers-office.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+
+}
+
+
+.banner_section .container {
+  /* position: absolute; */
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner_description {
+  margin-bottom: 195px;
+  width: 70%;
+}
+
+.button_service {
+  color: white;
+  background: var(--gradient-blue);
+  line-height: 26px;
+}
+
+/* service start */
+.service_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service_header .title {
+  margin-top: 70px;
+}
+
+.service_header h2 {
+  width: 40%;
+  text-align: center;
+}
+
+.arrow_double {
+  color: var(--primary-blue);
+
+}
+
+.services_section .cards {
+  display: flex;
+  gap: 23px;
+}
+
+.services_section .card {
+  width: 375px;
+  background-color: var(--nutral-color);
+
+}
+
+.service_list {}
+
+.service_list li {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 10px;
+}
+
+.service_list li a {}
+
+/* .service_list li span{
+  font-size: 20px;
+} */
